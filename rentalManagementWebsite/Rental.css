@@ -1,0 +1,149 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    background-image: url(img/backgroundimg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.article {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+nav {
+    height: 80px;
+}
+
+    nav h1 {
+        float: left;
+        line-height: 80px;
+        font-size: 24px;
+        color: #000;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        float: right;
+        line-height: 80px;
+    }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 0px 10px;
+        }
+
+            nav ul li a {
+                color: #000;
+                text-decoration: none;
+                text-transform: uppercase;
+                border-radius: 5px;
+                padding: 10px;
+            }
+
+                nav ul li a:hover {
+                    background-color: #f44336;
+                    transition: 0.5s ease;
+                }
+
+
+.productImage {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+
+
+.imageBox {
+    
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+    .imageBox img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .imageBox p {
+        margin-top: 10px;
+        padding:20px;
+    }
+
+    .imageBox button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .imageBox button:hover {
+            background-color: #0056b3;
+        }
+
+
+
+
+
+
+    .productImage img {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+    }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
