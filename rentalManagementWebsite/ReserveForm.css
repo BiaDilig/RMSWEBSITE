@@ -1,0 +1,53 @@
+﻿body{
+
+}
+
+.form-group{
+    text-align:center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.stall-info {
+    margin-bottom: 20px;
+}
+
+    .stall-info h2 {
+        margin-bottom: 10px;
+    }
+
+    .stall-info ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .stall-info li {
+        margin-bottom: 10px;
+    }
+
+    .stall-info label {
+        font-weight: bold;
+    }
