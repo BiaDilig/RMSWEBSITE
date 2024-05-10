@@ -36,7 +36,9 @@
                     </div>
                     <div class="contact-form">
                         <h2>Send Message</h2>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="name" Display="Dynamic" ErrorMessage="*This field is required" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
                         <asp:TextBox ID="name" runat="server" placeholder="Name"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="email" Display="Dynamic" ErrorMessage="Email is incorrect" ForeColor="Red" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Invalid Email</asp:RegularExpressionValidator>
                         <asp:TextBox ID="email" runat="server" placeholder="Email"></asp:TextBox>
                         <asp:TextBox ID="message" runat="server" TextMode="MultiLine" placeholder="Type your message"></asp:TextBox>
                         <asp:Button ID="sendBtn" runat="server" Text="Send" OnClick="SendBtn_Click" />

@@ -50,11 +50,23 @@ namespace rentalManagementWebsite
 
 
                     }
-                    else
+                    else    
                     {
                         // Stall reservation failed
 
+
+
+
+
+
+
+
+
+
                     }
+
+
+
 
                 }
             }
@@ -64,7 +76,7 @@ namespace rentalManagementWebsite
                 throw;
             }
 
-          
+
 
 
         }

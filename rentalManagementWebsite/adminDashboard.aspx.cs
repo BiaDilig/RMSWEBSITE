@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Data;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Oracle.ManagedDataAccess.Client;
 
 namespace rentalManagementWebsite
 {
@@ -23,10 +17,10 @@ namespace rentalManagementWebsite
 
             if (!IsPostBack)
             {
-               
+
                 DataTable dt = GetDataFromOracleDatabase();
 
-          
+
                 adminGridView.DataSource = dt;
                 adminGridView.DataBind();
             }
@@ -39,7 +33,7 @@ namespace rentalManagementWebsite
             DataTable dt = new DataTable();
             using (OracleConnection connection = new OracleConnection(connectionString))
             {
-                
+
                 string query = "SELECT * FROM \"user\"";
 
                 using (OracleCommand command = new OracleCommand(query, connection))

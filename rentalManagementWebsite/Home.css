@@ -16,7 +16,12 @@ section {
     width: 85%;
     margin: auto;
 }
-
+.username {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333; 
+}
 .article {
     text-align: center;
     padding: 100px;

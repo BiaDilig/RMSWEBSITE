@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-
+    <title></title>
     <link rel="stylesheet" href="Register.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
             <h2>Registration</h2>
             <asp:Label ID="lblMessage" runat="server" ForeColor="Red" Text=""></asp:Label>
             <div>
-                <asp:TextBox ID="txtUsername" runat="server" placeholder="UserName" CssClass="form-control" required=""></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server" placeholder="Username" CssClass="form-control" required=""></asp:TextBox>
             </div>
             <div>
                 <asp:TextBox ID="txtFirstName" runat="server" placeholder="First Name" CssClass="form-control" required=""></asp:TextBox>

@@ -12,7 +12,7 @@ namespace rentalManagementWebsite
         protected void Page_Load(object sender, EventArgs e)
         {
             string username = Session["Username"].ToString();
-            lblUsername.Text = "WELCOME " + username;
+            lblUsername.Text = "WELCOME <span class='username'>" + username + "</span>";
         }
     }
 }

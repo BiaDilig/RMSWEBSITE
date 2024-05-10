@@ -18,7 +18,7 @@
             <asp:Label ID="lblMessage" runat="server" ForeColor="Red" Text=""></asp:Label>
            
             <div>
-                <asp:TextBox ID="txtUsername" runat="server" placeholder="Email" CssClass="form-control" required=""></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server" placeholder="Username" CssClass="form-control" required=""></asp:TextBox>
             </div>
             
             <div>

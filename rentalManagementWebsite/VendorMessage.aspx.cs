@@ -31,12 +31,11 @@ namespace rentalManagementWebsite
                 {
                     connection.Open();
                     string query = @"
-                INSERT INTO Messages (Message_ID, Message, FIRSTNAME, Email, USER_ID)
+                INSERT INTO Messages (Message_ID, Message, FirstName, Email, USER_ID)
                 VALUES (
                     (SELECT COALESCE(MAX(Message_ID), 0) + 1 FROM Messages),
                     :userMessage,
                     :userName,
-                    NULL, -- Assuming LastName is not used and can be null
                     :userEmail,
                     :userID
                 )";
